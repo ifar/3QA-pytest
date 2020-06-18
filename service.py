@@ -14,7 +14,7 @@ app = Flask(__name__)
 api = Api(app)
 
 
-class Employees(Resource):
+class Noblisci(Resource):
     def get(self):
         mycursor = mydb.cursor()
         select = "SELECT * FROM noblisci"
@@ -60,7 +60,7 @@ class Employees(Resource):
 # }
 
 
-api.add_resource(Employees, '/employees')
+api.add_resource(Noblisci, '/noblisci')
 
 if __name__ == '__main__':
     port = input("Wprowadz numer portu: ")
