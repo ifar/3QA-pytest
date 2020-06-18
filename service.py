@@ -49,7 +49,7 @@ class Employees(Resource):
             mydb.commit()
         return {'status': 'success'}
 
-#
+# exemplary Json file
 # {
 #     "imie": "Stefan",
 #     "nazwisko": "Stefanski",
@@ -58,9 +58,10 @@ class Employees(Resource):
 #     "kraj": "Stefano",
 #     "wiek": "18"
 # }
-#
 
-api.add_resource(Employees, '/employees')  # Route_1
+
+api.add_resource(Employees, '/employees')
 
 if __name__ == '__main__':
-    app.run(port='5002')
+    port = input("Wprowadz numer portu: ")
+    app.run(port=port)
