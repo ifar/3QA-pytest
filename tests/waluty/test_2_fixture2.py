@@ -9,8 +9,8 @@ def basic_request():
     params = {'base': 'USD',
               'symbols': 'PLN',
               }
-    proxy = {'http': 'http://proxy-ir.intel.com:911',
-             'https': 'http://proxy-ir.intel.com:912'}
+    proxy = {'http': '',
+             'https': ''}
     w = Waluty()
 
     data = w.get_request(url, params, proxy)

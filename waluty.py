@@ -78,8 +78,8 @@ class Waluty():
         PARAMS = {'base': currency_base,
                   'symbols': currency_symbols,
                   }
-        PROXY = {'http': 'http://proxy-ir.intel.com:911',
-                 'https': 'http://proxy-ir.intel.com:912'}
+        PROXY = {'http': '',
+                 'https': ''}
 
         data = self.get_request(URL, PARAMS, PROXY)
 
